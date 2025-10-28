@@ -1,23 +1,21 @@
 # WDProjSectionDalimotKam
-
-## Are You Ok: 
-
+## Are You Ok: A Check-Up on Us
 ******
-
 #### Logo
 ##### ![Logo](Logo.png)
 
 ### Description 
-#### AreYouOkay is a website centered around mental health awareness with a goal of giving users a simple and convenient way to care for their emotional well-being.    It aims to create a safe and supportive space for people to seek help and connect with others for understanding.  It provides accessible information on common mental health issues, their causes, signs and effects through simple guides.  AreYouOkay includes features to make mental wellness more engaging such as VentSpace–an attribute of the site which can either be used as a personal diary or anonymous confession board.  This site’s purpose is to motivate people to pay attention to their mental health and ensure that every user leaves the browser more relaxed than before.
+#### Are You Okay: A Check-Up on Us is a website centered around mental health awareness with a goal of giving users a simple and convenient way to care for their emotional well-being.    It aims to create a safe and supportive space for people to seek help and connect with others for understanding.  It provides accessible information on common mental health issues, their causes, signs and effects through simple guides.  It includes features to make mental wellness more engaging such as VentSpace–an attribute of the site which can either be used as a personal diary or anonymous confession board.  This site’s purpose is to motivate people to pay attention to their mental health and ensure that every user leaves the browser more relaxed than before.
 
 *****
 ### Breakdown
-#### Log in/Sign in page:
-#### Home page:
-#### About:
-#### Need Help?:
-#### Vent Space:
-#### Relaxing Games: 
+#### Log in/Sign in page: This page is like your any other ordinary log in/sign in system. It will ask the user for a personalized username and password. The username will be then displayed in the succeeding webpages.
+#### Home page: This provides an overview of the contents of the website. This will be the default page flashed on the screen, after the log in/sign in process. 
+#### About: This page provides detailed explanation on what mental health is, its signs, possible factors/causes, and the forms it comes in.
+#### Need Help?: This page is allocated for emphasizing on the effects of mental health, a commonly seen outcome -- suicide, along with ways to help solve these problems, and contact information of counseling and hospital.
+#### Vent Space: This page is a freedom wall in a sense but more on venting out problems. It will be divided into two subpages being "My Diary" and "Send a Note", these subpages or features will be simple to do and understand on the end of the user.
+#### Gallery: This page will flash a bunch of pictures, quotes,  illustrations, and other motivational materials to enlighten the mood of the user when viewing them.
+#### Sources: This page will contain all of the sources used in the project.
 *****
 ### Additional Information
 #### At the start of the website, there will be a log in/sign in process which is designed for the website to feel more realistic.
@@ -25,7 +23,7 @@
 ##### The footer will always contain the copyright as well as the authors' personal information.
 *****
 ### JS Incorporation
-#### JavaScript will be incorporated into the VentSpace feature of the website to make it interactive and have a good data flow.  It will handle real-time personal “diary” entries and form submissions for anonymous confessions or “vents” without requiring the user to reload the page.  Using the coding language, the site can display shared “vents” and store personal “diary” entries locally while ensuring anonymity by using an individual’s username.  JavaScript will also incorporate customization of the page using pre-defined themes based on your moods.  These functions make VentSpace an engaging way to express their thoughts and find comfort through others’ experiences.
+#### JavaScript will be incorporated into the VentSpace feature of the website to make it interactive and have a good data flow. It will handle real-time personal “diary” entries and form submissions for anonymous confessions or “vents” without requiring the user to reload the page. Using the coding language, the site can display shared “vents” and store personal “diary” entries locally while ensuring anonymity by using an individual’s username.  JavaScript will also incorporate customization of the page using pre-defined themes based on your moods.  These functions make VentSpace an engaging way to express their thoughts and find comfort through others’ experiences.
 *****
 ### Wireframe
 [Wireframe](https://www.canva.com/design/DAG24od6Pu0/U2O_RmRlkp2bErPBO6pYvA/edit?utm_content=DAG24od6Pu0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)

@@ -8,7 +8,7 @@
 ##### ![Logo](Logo.png)
 
 ### Description 
-#### [Put here]
+#### AreYouOkay is a website centered around mental health awareness with a goal of giving users a simple and convenient way to care for their emotional well-being.    It aims to create a safe and supportive space for people to seek help and connect with others for understanding.  It provides accessible information on common mental health issues, their causes, signs and effects through simple guides.  AreYouOkay includes features to make mental wellness more engaging such as VentSpace–an attribute of the site which can either be used as a personal diary or anonymous confession board.  This site’s purpose is to motivate people to pay attention to their mental health and ensure that every user leaves the browser more relaxed than before.
 
 *****
 ### Breakdown

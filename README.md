@@ -25,7 +25,7 @@
 ##### The footer will always contain the copyright as well as the authors' personal information.
 *****
 ### JS Incorporation
-#### JavaScript will be incorporated into VentSpace feature of the website to make it interactive and have a good data flow.  It will handle real-time personal “diary” entries and form submissions for anonymous confessions or “vents” without requiring the user to reload the page.  Using the coding language, the site can display shared “vents” and store personal “diary” entries locally while ensuring anonymity by using an individual’s username.  JavaScript will also incorporate customization of the page using pre-defined themes based on your moods.  These functions make VentSpace an engaging way to express their thoughts and find comfort through others’ experiences.
+#### JavaScript will be incorporated into the VentSpace feature of the website to make it interactive and have a good data flow.  It will handle real-time personal “diary” entries and form submissions for anonymous confessions or “vents” without requiring the user to reload the page.  Using the coding language, the site can display shared “vents” and store personal “diary” entries locally while ensuring anonymity by using an individual’s username.  JavaScript will also incorporate customization of the page using pre-defined themes based on your moods.  These functions make VentSpace an engaging way to express their thoughts and find comfort through others’ experiences.
 *****
 ### Wireframe
 [Wireframe](https://www.canva.com/design/DAG24od6Pu0/U2O_RmRlkp2bErPBO6pYvA/edit?utm_content=DAG24od6Pu0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)

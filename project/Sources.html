@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sources</title>
+    <link rel="stylesheet" href="sources.css">
+
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            const user = localStorage.getItem("currentUser") || "User";
+            document.getElementById("username").innerText = user;
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/Logo.png" class="site-logo">
+        <h1>Hello, <span id="username">User</span></h1>
+
+        <nav class="nav-bar">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Help.html">Need Help?</a>
+            <a href="Vent.html">Vent Space</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+    </header>
+
+       <h2 class="sources-title">Sources</h2>

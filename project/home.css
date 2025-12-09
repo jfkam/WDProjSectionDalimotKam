@@ -30,7 +30,7 @@
       flex-direction: column;
       min-height: 100vh;
       margin: 0;
-      background-image: url("background.png");
+      background-image: url("images/background.png");
       background-repeat: repeat;
       background-attachment: fixed;
       background-position: center;
@@ -62,7 +62,6 @@
     right: 5px;
     bottom: 5px;
     border: 2px solid white; 
-    pointer-events: none;   
   padding: 15px 25px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(233, 89, 111, 0.4);
@@ -76,5 +75,10 @@ h1 {
     text-shadow: 0 0 10px rgb(255, 252, 89); 
 }
 
-
-
+.site-logo {
+    width: 80px;          
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

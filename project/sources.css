@@ -75,6 +75,13 @@ h1 {
     text-shadow: 0 0 10px rgb(255, 252, 89); 
 }
 
+h3 {
+    color:rgb(29, 29, 29);
+    font-size: 20px;
+    text-align: center;
+    
+}
+
 .site-logo {
     width: 80px;          
     height: auto;

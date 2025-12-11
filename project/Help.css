@@ -101,3 +101,27 @@
     width: 500px;
     height: auto;
 }
+
+.dropdown {
+    width: 100%;
+}
+
+.drop-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    border: 3px solid #d4a657;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding: 0 20px;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.drop-content h2 {
+    margin-top: 0;
+}
+
+.drop-content.open {
+    padding: 20px;
+    max-height: 500px; 
+}

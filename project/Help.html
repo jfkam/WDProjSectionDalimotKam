@@ -4,38 +4,75 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Need Help Page</title>
-  <link rel="stylesheet" href="Help.css">
+<link rel="stylesheet" href="Help.css">
 </head>
+
 <body>
+
     <div class="header">Hello, User</div>
-        
-    </div>
-     
+
     <div class="nav-bar">
         <a href="Home.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Help.html">Need Help?</a>
-                <a href="Vent.html">Vent Space</a>
-                <a href="Sources.html">Sources</a>
+        <a href="About.html">About</a>
+        <a href="Help.html">Need Help?</a>
+        <a href="Vent.html">Vent Space</a>
+        <a href="Sources.html">Sources</a>
     </div>
 
     <h1>Need Help?</h1>
 
     <div class="star-nav">
-        <a class="star-link" href="#effects">
-            <img src="images/star1.png"/>
-        </a>
-        <a class="star-link" href="#suicide">
-            <img src="images/star2.png"/>
-        </a>
-        <a class="star-link" href="#help">
-            <img src="images/star3.png" />
-        </a>
-        <a class="star-link" href="#counseling">
-            <img src="images/star4.png"/>
-        </a>
+
+        <div class="dropdown">
+            <a class="star-link" onclick="toggleDrop('effects')">
+                <img src="images/star1.png"/>
+            </a>
+            <div id="effects" class="drop-content">
+                <h2>Effects of Mental Illness</h2>
+                <p>Your content here…</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a class="star-link" onclick="toggleDrop('suicide')">
+                <img src="images/star2.png"/>
+            </a>
+            <div id="suicide" class="drop-content">
+                <h2>Emphasis on Suicide</h2>
+                <p>Your content here…</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a class="star-link" onclick="toggleDrop('help')">
+                <img src="images/star3.png"/>
+            </a>
+            <div id="help" class="drop-content">
+                <h2>Simple Ways to Help</h2>
+                <p>Your content here…</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a class="star-link" onclick="toggleDrop('counseling')">
+                <img src="images/star4.png"/>
+            </a>
+            <div id="counseling" class="drop-content">
+                <h2>Counseling & Hospitals</h2>
+                <p>Your content here…</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="footer">Copyright © Dalimot, Kam • [Social Medias]</div>
+
+    <script>
+    function toggleDrop(id) {
+        const box = document.getElementById(id);
+        box.classList.toggle('open');
+    }
+    </script>
+
 </body>
 </html>

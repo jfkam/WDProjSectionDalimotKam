@@ -1,8 +1,12 @@
-   header {
+html, body {
+    overflow-x: hidden;
+}
+
+header {
     background-color: rgb(255, 181, 206);
     padding: 10px 20px;
     font-family: "Emilys Candy", serif;
-    color: rgb(0, 0, 0);
+    position: relative;
     
 }
 
@@ -64,10 +68,6 @@
   font-size: 20px;
   font-family: "Delius Swash Caps", cursive;
   background:  rgb(255, 171, 183);
-  top: 5px;      
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
     border: 2px solid white; 
   padding: 15px 25px;
   border-radius: 20px;
@@ -90,11 +90,22 @@ h1 {
     left: 10px;
 }
 
-.home-title {
-    text-align: center;
-    font-size: 120px;
-    color: rgb(255, 200, 230);
-    text-shadow: 0px 0px 15px pink;
-    font-family: "Emilys Candy", cursive;
-    margin-bottom: 40px;
+
+
+h2 {
+  text-align: center;    
+  color: rgb(255, 200, 230);
+  text-shadow: 0px 0px 15px pink;
+  font-family: "Emilys Candy", cursive;
+  margin-bottom: 5px;
+  font-size: 120px;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(255, 200, 230);
+  text-shadow: 0px 0px 15px pink;
+  font-family: "Emilys Candy", cursive;
+  margin-top: 0;
+  font-size: 110px;
 }

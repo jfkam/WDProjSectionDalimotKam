@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="diary.css">
+
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            const user = localStorage.getItem("currentUser") || "User";
+            document.getElementById("username").innerText = user;
+        });
+    </script>
+</head>
+
+<body>
+    
+
+    <header>
+        <img src="images/Logo.png" class="site-logo">
+        <h1>Hello, <span id="username">User</span></h1>
+
+        <nav class="nav-bar">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Help.html">Need Help?</a>
+            <a href="Vent.html">Vent Space</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+    </header>
+
+
+
+<h2 class="title">My Diary</h2>
+
+<div class="button-box">
+    <button id="saveBtn">Save Entry</button>
+    <button id="viewBtn">View Saved Entries</button>
+</div>
+
+<div class="diary-container">
+    <div class="page left-page" contenteditable="true"></div>
+    <div class="page right-page" contenteditable="true"></div>
+</div>
+
+<!-- Popup for saved entries -->
+<div id="entriesPopup" class="popup">
+    <div class="popup-content">
+        <h3>Saved Entries</h3>
+        <ul id="entriesList"></ul>
+        <button id="closePopup">Close</button>
+    </div>
+</div>
+
+<footer>
+    Copyright ©Dalímot, Kam
+</footer>
+
+<script src="diary.js"></script>
+</body>
+</html>

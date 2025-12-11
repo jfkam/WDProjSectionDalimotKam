@@ -6,11 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Need Help Page</title>
 <link rel="stylesheet" href="Help.css">
+ <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            const user = localStorage.getItem("currentUser") || "User";
+            document.getElementById("username").innerText = user;
+        });
+    </script>
 </head>
 
 <body>
 
     <div class="header">Hello, User</div>
+   
 
     <div class="nav-bar">
         <a href="Home.html">Home</a>

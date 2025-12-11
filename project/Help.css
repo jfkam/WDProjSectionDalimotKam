@@ -22,6 +22,8 @@
     
 }
 
+
+
 .header-top {
     display: flex;
     justify-content: flex-start; 
@@ -87,13 +89,15 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        justify-content: flex-start;
         cursor: pointer;
         font-size: 1.8rem;
         color: #5c4100;
         text-decoration: none;
         font-weight: bold;
     }
-    .star-link img {
-        width: 120px;
-    }
     
+    .star-nav .star-link img {
+    width: 500px;
+    height: auto;
+}

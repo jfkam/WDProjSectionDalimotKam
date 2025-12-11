@@ -191,6 +191,7 @@ h1 {
     .cloud-wrapper {
         justify-content: center; /* center on small screens */
     }
+}
     .cloud {
         width: 90%;
         padding: 4vw;
@@ -198,4 +199,3 @@ h1 {
     .cloud img {
         width: 95%;
     }
-}

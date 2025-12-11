@@ -6,19 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Need Help Page</title>
 <link rel="stylesheet" href="Help.css">
- <script defer>
-        document.addEventListener("DOMContentLoaded", () => {
+<script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+        const usernameSpan = document.getElementById("username");
+        if (usernameSpan) {
             const user = localStorage.getItem("currentUser") || "User";
-            document.getElementById("username").innerText = user;
-        });
-    </script>
+            usernameSpan.textContent = user;
+        }
+    });
+</script>
 </head>
 
 <body>
 
-    <div class="header">Hello, User</div>
+  <div class="header">Hello, <span id="username">User</span></div>
    
-
     <div class="nav-bar">
         <a href="Home.html">Home</a>
         <a href="About.html">About</a>
@@ -30,18 +32,7 @@
     <h1>Need Help?</h1>
 
     <div class="star-nav">
-
-        <div class="dropdown">
-            <a class="star-link" onclick="toggleDrop('effects')">
-                <img src="images/star1.png"/>
-            </a>
-            <div id="effects" class="drop-content">
-                <h2>Effects of Mental Illness</h2>
-                <p>It affects the overall physique of an individual leading to extreme changes in behavior, functionality and social interaction that strain not only the individual themselves, but also the relationships built around them.</p>
-            </div>
-        </div>
-
-        <div class="dropdown">
+           <div class="dropdown">
             <a class="star-link" onclick="toggleDrop('suicide')">
                 <img src="images/star2.png"/>
             </a>
@@ -67,35 +58,33 @@
             </a>
             <div id="counseling" class="drop-content">
                 <h2>Counseling & Hospitals</h2>
-                <p>NCMH Crisis Hotline (24/7):
-Nationwide Landline (toll-free): 1553
-Globe/TM subscribers: 0917-899-8727 (USAP) or 0966-351-4518
-Smart/TNT subscribers: 0919-057-1553 or 0908-639-2672
-For landlines in areas outside of Luzon, dial (02) 7989-8727.
-In Touch Community Services (24/7 free and confidential counseling):
-Landline: (02) 8893-7603
-Mobile: 0917-800-1123 or 0922-893-8944
-Hopeline (Natasha Goulbourn Foundation, 24/7):
-PLDT Landline: (02) 8804-4673
-Globe subscribers (toll-free): 2919
-Globe/TM mobile: 0917-558-4673
-Smart mobile: 0918-873-4673 
-Philippine General Hospital (PGH) Psychiatry and Behavioral Medicine Department: Offers free consultations. You can book an appointment online via the PGH OPD website.
-Landline: (02) 8554-8470 or (02) 8526-0150
-</p>
-            </div>
-        </div>
+                <p>NCMH Crisis Hotline (24/7):</p>
+<p>Nationwide Landline (toll-free): 1553 </p>
+<p>Globe/TM subscribers: 0917-899-8727 (USAP) or 0966-351-4518 </p>
+<p>Smart/TNT subscribers: 0919-057-1553 or 0908-639-2672</p>
+<p>For landlines in areas outside of Luzon, dial (02) 7989-8727.</p>
+<p>In Touch Community Services (24/7 free and confidential counseling):</p>
+<p>Landline: (02) 8893-7603</p>
+<p>Mobile: 0917-800-1123 or 0922-893-8944 </p>
+<p>Hopeline (Natasha Goulbourn Foundation, 24/7):</p>
+<p>PLDT Landline: (02) 8804-4673</p>
+<p>Globe subscribers (toll-free): 2919</p>
+<p>Globe/TM mobile: 0917-558-4673</p>
+<p>Smart mobile: 0918-873-4673 </p>
+<p>Philippine General Hospital (PGH) Psychiatry and Behavioral Medicine Department: Offers free consultations. You can book an appointment online via the PGH OPD website.</p>
+<p>Landline: (02) 8554-8470 or (02) 8526-0150</p>
 
+            </div>
     </div>
 
     <div class="footer">Copyright © Dalimot, Kam • [Social Medias]</div>
 
-    <script>
-    function toggleDrop(id) {
-        const box = document.getElementById(id);
-        box.classList.toggle('open');
-    }
-    </script>
+<script>
+function toggleDrop(id) {
+    const box = document.getElementById(id);
+    box.classList.toggle('open');
+}
+</script>
 
 </body>
 </html>

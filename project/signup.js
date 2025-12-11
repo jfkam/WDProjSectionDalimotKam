@@ -75,6 +75,6 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     localStorage.setItem("currentUser", username);
 
     setTimeout(() => {
-        window.location.href = "home.html";
+        window.location.href = "Home.html";
     }, 1200);
 });

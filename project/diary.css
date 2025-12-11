@@ -28,9 +28,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background: #f5f1f3;
+    background-image: url(images/background.png);
     font-family: "Cormorant Garamond", serif;
 }
+
+
+  
+
 
 .title {
     text-align: center;
@@ -38,6 +42,45 @@ body {
     font-family: "Emilys Candy", serif;
     color: #ff98c9;
     margin-top: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  margin-top: 1vw;
+}
+
+.nav-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; 
+  background: rgb(255, 171, 183);
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px; 
+  border-radius: 10px; 
+  border: 2px solid white;
+  font-size: 14px;
+  font-family: "Delius Swash Caps", cursive;
+  box-shadow: 0 5px 10px rgba(233, 89, 111, 0.3);
+}
+
+h1 {
+    font-family: cursive;           
+    color: rgb(254, 255, 176);                   
+    text-align: center;             
+    text-shadow: 0 0 0.5vw rgb(255, 252, 89); 
+}
+
+.site-logo {
+    width: 5vw;  
+    max-width: 80px;        
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .button-box {
@@ -61,49 +104,66 @@ button:hover {
 }
 
 .diary-container {
+    position: relative; 
     margin: 30px auto;
-    width: 900px;
-    height: 600px;
+    width: 900px;   
+    height: 600px;  
     background-image: url("images/diaryentry.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: space-between;
-    padding: 90px 110px;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .page {
-    width: 45%;
-    height: 100%;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    overflow-y: auto;
+    position: absolute; 
     background: transparent;
+    border: none;
     outline: none;
+    font-size: 16px;
+    padding: 20px;
+    color: #000;
+    resize: none;
+    overflow-y: auto;
 }
 
-/* Popup */
-.popup {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4);
-    display: none;
-    justify-content: center;
-    align-items: center;
+.left-page {
+    top: 100px;       
+    left: 80px;      
+    width: 380px;     
+    height: 400px;    
 }
+
+.right-page {
+    top: 100px;
+    right: 80px;      
+    width: 380px;
+    height: 400px;
+}
+
+
+.popup {
+    display: none;  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
 
 .popup-content {
-    background: white;
-    padding: 20px;
-    width: 400px;
-    max-height: 70%;
+     max-height: 400px;
     overflow-y: auto;
-    border-radius: 15px;
 }
+
 
 .popup-content ul {
     list-style: none;
@@ -116,4 +176,32 @@ button:hover {
     margin: 10px 0;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    font-size: 120px;
+    color: rgb(255, 200, 230);
+    text-shadow: 0px 0px 1vw pink;
+    font-family: "Emilys Candy", cursive;
+    margin-bottom: 2vw;
+}
+
+.sign-out-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(233, 65, 65, 0.596);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: background 0.2s ease;
+}
+
+.sign-out-btn:hover {
+    background-color: rgb(220, 50, 50);
 }

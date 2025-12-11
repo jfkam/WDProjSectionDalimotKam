@@ -1,44 +1,45 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="icon" href="images/Logo.png" type="image/png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="Logo.png">
-    <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
 
     <script defer>
         document.addEventListener("DOMContentLoaded", () => {
-            const user = localStorage.getItem("currentUser") || "User";
-            document.getElementById("username").innerText = user;
+            const usernameSpan = document.getElementById("username");
+            if (usernameSpan) {
+                const user = localStorage.getItem("currentUser") || "User";
+                usernameSpan.textContent = user;
+            }
         });
     </script>
 </head>
 
-    <body>
-        <header>
+<body>
+    <header>
+        <img src="images/Logo.png" class="site-logo" alt="Logo">
+        <h1>Hello, <span id="username">User</span></h1>
+        <nav class="nav-bar">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Help.html">Need Help?</a>
+            <a href="Vent.html">Vent Space</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+    </header>
 
-              <img src="images/Logo.png" class="site-logo">
-            <h1> Hello, <span id="username">User</span></h1>
-            <nav class ="nav-bar">
-                <a href="Home.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Help.html">Need Help?</a>
-                <a href="Vent.html">Vent Space</a>
-                <a href="Sources.html">Sources</a>
-            </nav>
-        </header>
-        <h2>Are You Ok</h2>
-        <h3>A Check-Up on Us</h3>
-        
-        <main>
-          <img src="images/home.png">
-        </main>
-        <footer>
-            <p class="copyright"> &copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
-        </footer>
-    </body>
+    <h2>Are You Ok</h2>
+    <h3>A Check-Up on Us</h3>
 
+    <main>
+        <img src="images/home.png" alt="Home Image">
+    </main>
 
+    <footer>
+        <p class="copyright">&copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

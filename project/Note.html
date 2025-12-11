@@ -13,6 +13,7 @@
         <img src="images/Logo.png" class="site-logo">
         <h1>Hello, <span id="username">User</span></h1>
 
+
         <nav class="nav-bar">
             <a href="Home.html">Home</a>
             <a href="About.html">About</a>
@@ -25,56 +26,77 @@
     <h2 class="send-title">Send A Note</h2>
 
     <div class="letter-container">
-        <img src="images/letter.png" class="letter-img">
+        <img src="images/noteentry.png" class="letter-img">
 
         <textarea id="noteInput" 
                   class="paper-area"
                   placeholder="Write something anonymous..."></textarea>
     </div>
 
-    <button class="send-btn" onclick="submitNote()">Send</button>
+<button class="send-btn">Send</button>
 
     <section class="notes-section">
         <h3 class="notes-title">📮 Other Notes</h3>
         <div id="notesList"></div>
     </section>
 
-    <!-- MOVE SCRIPT HERE -->
+    <footer>
+        <p class="copyright"> &copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
+    </footer>
+
     <script>
+       
         document.addEventListener("DOMContentLoaded", () => {
-            const user = localStorage.getItem("currentUser") || "User";
-            document.getElementById("username").innerText = user;
+            document.getElementById("username").innerText = localStorage.getItem("currentUser") || "User";
+            document.getElementById("year").innerText = new Date().getFullYear();
             displayNotes();
+
+
+            document.querySelector(".send-btn").addEventListener("click", submitNote);
         });
 
         function submitNote() {
-            let text = document.getElementById("noteInput").value.trim();
-            if (text === "") {
-                alert("Please write something first!");
-                return;
-            }
+            const noteInput = document.getElementById("noteInput");
+            const text = noteInput.value.trim();
+            if (!text) { alert("Please write something first!"); return; }
 
-            let notes = JSON.parse(localStorage.getItem("notes")) || [];
-            notes.push(text);
+            let notes = [];
+            try {
+                notes = JSON.parse(localStorage.getItem("notes")) || [];
+                if (!Array.isArray(notes)) notes = [];
+            } catch (e) { notes = []; }
+
+            notes.push({ text: text, timestamp: new Date().toLocaleString() });
+
             localStorage.setItem("notes", JSON.stringify(notes));
-
-            document.getElementById("noteInput").value = "";
+            noteInput.value = "";
             displayNotes();
         }
 
         function displayNotes() {
-            let notes = JSON.parse(localStorage.getItem("notes")) || [];
-            let container = document.getElementById("notesList");
-            container.innerHTML = "";
+            const notesList = document.getElementById("notesList");
+            notesList.innerHTML = "";
 
-            notes.slice().reverse().forEach(n => {
-                let div = document.createElement("div");
-                div.className = "note-card";
-                div.textContent = n;
-                container.appendChild(div);
+            let notes = [];
+            try {
+                notes = JSON.parse(localStorage.getItem("notes")) || [];
+                if (!Array.isArray(notes)) notes = [];
+            } catch (e) { notes = []; }
+
+            if (notes.length === 0) {
+                notesList.innerHTML = "<p>No notes yet. Be the first to send one!</p>";
+                return;
+            }
+
+            notes.forEach(note => {
+                const div = document.createElement("div");
+                div.className = "note";
+                div.innerHTML = `<p>${note.text}</p><span class="note-timestamp">${note.timestamp}</span>`;
+                notesList.appendChild(div);
             });
         }
     </script>
+
 
 </body>
 </html>

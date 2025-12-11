@@ -1,9 +1,8 @@
-// Load all saved entries (array)
+
 function getEntries() {
     return JSON.parse(localStorage.getItem("diary_entries") || "[]");
 }
 
-// Save updated entries
 function saveEntries(entries) {
     localStorage.setItem("diary_entries", JSON.stringify(entries));
 }
@@ -32,7 +31,6 @@ document.getElementById("saveBtn").addEventListener("click", () => {
     alert("Entry saved!");
 });
 
-// View saved entries
 document.getElementById("viewBtn").addEventListener("click", () => {
     const popup = document.getElementById("entriesPopup");
     const list = document.getElementById("entriesList");
@@ -57,7 +55,6 @@ document.getElementById("viewBtn").addEventListener("click", () => {
     popup.style.display = "flex";
 });
 
-// Close popup
 document.getElementById("closePopup").addEventListener("click", () => {
     document.getElementById("entriesPopup").style.display = "none";
 });

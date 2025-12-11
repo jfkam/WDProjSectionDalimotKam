@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/Logo.png" type="image/png">
-    <meta charset="UTF-8">
     <title>About</title>
     <link rel="stylesheet" href="about.css">
 
     <script defer>
         document.addEventListener("DOMContentLoaded", () => {
-            const user = localStorage.getItem("currentUser") || "User";
-            document.getElementById("username").innerText = user;
+            const usernameSpan = document.getElementById("username");
+            if (usernameSpan) {
+                const user = localStorage.getItem("currentUser") || "User";
+                usernameSpan.textContent = user;
+            }
         });
     </script>
 </head>
@@ -19,7 +21,7 @@
 <body>
     
     <header>
-        <img src="images/Logo.png" class="site-logo">
+        <img src="images/Logo.png" class="site-logo" alt="Logo">
         <h1>Hello, <span id="username">User</span></h1>
 
         <nav class="nav-bar">
@@ -32,8 +34,7 @@
     </header>
 
     <main class="about-container">
-
-        <h2 class="about-title">About</h2>
+       <h2 class="about-title">About</h2>
 
         <div class="cloud-wrapper left">
         <div class="cloud cloud-lightblue title-cloud">
@@ -104,7 +105,7 @@
 
     <footer>
         <p class="copyright">© Dalimot, Kam 2025. All rights reserved.</p>
-        <p  <h4 class="social-text">[Social Medias]</h4> </p>
+        <h4 class="social-text">[Social Medias]</h4>
     </footer>
 
 </body>

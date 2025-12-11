@@ -1,25 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="images/Logo.png" type="image/png">
     <meta charset="UTF-8">
     <title>My Diary</title>
+    <link rel="icon" href="images/Logo.png" type="image/png">
     <link rel="stylesheet" href="diary.css">
 
     <script defer>
         document.addEventListener("DOMContentLoaded", () => {
-            const user = localStorage.getItem("currentUser") || "User";
-            document.getElementById("username").innerText = user;
+            const usernameSpan = document.getElementById("username");
+            if (usernameSpan) {
+                const user = localStorage.getItem("currentUser") || "User";
+                usernameSpan.textContent = user;
+            }
         });
     </script>
 </head>
 
 <body>
-    
-
     <header>
-        <img src="images/Logo.png" class="site-logo">
+        <img src="images/Logo.png" class="site-logo" alt="Logo">
         <h1>Hello, <span id="username">User</span></h1>
 
         <nav class="nav-bar">
@@ -31,33 +31,30 @@
         </nav>
     </header>
 
+    <h2 class="title">My Diary</h2>
 
-
-<h2 class="title">My Diary</h2>
-
-<div class="button-box">
-    <button id="saveBtn">Save Entry</button>
-    <button id="viewBtn">View Saved Entries</button>
-</div>
-
-<div class="diary-container">
-    <div class="page left-page" contenteditable="true"></div>
-    <div class="page right-page" contenteditable="true"></div>
-</div>
-
-<!-- Popup for saved entries -->
-<div id="entriesPopup" class="popup">
-    <div class="popup-content">
-        <h3>Saved Entries</h3>
-        <ul id="entriesList"></ul>
-        <button id="closePopup">Close</button>
+    <div class="button-box">
+        <button id="saveBtn">Save Entry</button>
+        <button id="viewBtn">View Saved Entries</button>
     </div>
-</div>
 
-<footer>
-    Copyright ©Dalímot, Kam
-</footer>
+    <div class="diary-container">
+        <div class="page left-page" contenteditable="true"></div>
+        <div class="page right-page" contenteditable="true"></div>
+    </div>
 
-<script src="diary.js"></script>
+    <div id="entriesPopup" class="popup">
+        <div class="popup-content">
+            <h3>Saved Entries</h3>
+            <ul id="entriesList"></ul>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="diary.js"></script>
 </body>
 </html>

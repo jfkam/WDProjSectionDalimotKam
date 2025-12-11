@@ -1,0 +1,101 @@
+/* --- HEADER --- */
+header {
+    background: rgb(255, 181, 206);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    height: 70px;
+}
+
+header h1 {
+    font-family: "Emilys Candy";
+    font-size: 38px;
+    color: black;
+}
+
+.nav-bar a {
+    padding: 8px 15px;
+    background: white;
+    border-radius: 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.send-title {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Emilys Candy";
+    color: #ff8fcf;
+    margin-top: 30px;
+}
+
+
+.letter-container {
+    position: relative;
+    width: 420px;
+    margin: 30px auto;
+}
+
+.letter-img {
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+.paper-area {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-5deg);
+    width: 300px;
+    height: 200px;
+    font-family: "Georgia";
+    background: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+/* --- SEND BUTTON --- */
+.send-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 28px;
+    background: #ffb3d9;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .2s;
+}
+
+.send-btn:hover {
+    background: #ffa3d1;
+    transform: scale(1.05);
+}
+
+
+.notes-section {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.note-card {
+    background: #ffe6f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 12px 0;
+    white-space: pre-wrap;
+}

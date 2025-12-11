@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/Logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <title>Send A Note</title>
+    <link rel="stylesheet" href="note.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/Logo.png" class="site-logo">
+        <h1>Hello, <span id="username">User</span></h1>
+
+        <nav class="nav-bar">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Help.html">Need Help?</a>
+            <a href="Vent.html">Vent Space</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+    </header>
+
+    <h2 class="send-title">Send A Note</h2>
+
+    <div class="letter-container">
+        <img src="images/letter.png" class="letter-img">
+
+        <textarea id="noteInput" 
+                  class="paper-area"
+                  placeholder="Write something anonymous..."></textarea>
+    </div>
+
+    <button class="send-btn" onclick="submitNote()">Send</button>
+
+    <section class="notes-section">
+        <h3 class="notes-title">📮 Other Notes</h3>
+        <div id="notesList"></div>
+    </section>
+
+    <!-- MOVE SCRIPT HERE -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const user = localStorage.getItem("currentUser") || "User";
+            document.getElementById("username").innerText = user;
+            displayNotes();
+        });
+
+        function submitNote() {
+            let text = document.getElementById("noteInput").value.trim();
+            if (text === "") {
+                alert("Please write something first!");
+                return;
+            }
+
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+            notes.push(text);
+            localStorage.setItem("notes", JSON.stringify(notes));
+
+            document.getElementById("noteInput").value = "";
+            displayNotes();
+        }
+
+        function displayNotes() {
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+            let container = document.getElementById("notesList");
+            container.innerHTML = "";
+
+            notes.slice().reverse().forEach(n => {
+                let div = document.createElement("div");
+                div.className = "note-card";
+                div.textContent = n;
+                container.appendChild(div);
+            });
+        }
+    </script>
+
+</body>
+</html>

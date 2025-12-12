@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Page baseline structure-->
     <meta charset="UTF-8">
     <title>My Diary</title>
     <link rel="icon" href="assets/Logo.png" type="image/png">
@@ -10,6 +11,7 @@
 
 <body>
     <header>
+        <!--Headings + navigation menu-->
         <img src="assets/Logo.png" class="site-logo" alt="Logo">
         <h1>Hello, <span id="username">User</span></h1>
 
@@ -21,19 +23,19 @@
             <a href="Sources.html">Sources</a>
         </nav>
     </header>
-
+    <!--Diary wrapper-->
     <h2 class="title">My Diary</h2>
-
+    <!--Toggle buttons for save entry and view saved entries-->
     <div class="button-box">
         <button id="saveBtn">Save Entry</button>
         <button id="viewBtn">View Saved Entries</button>
     </div>
-
+    <!--Left and right side of the book-->
     <div class="diary-container">
         <div class="page left-page" contenteditable="true"></div>
         <div class="page right-page" contenteditable="true"></div>
     </div>
-
+    <!--Viewing saved entries-->
     <div id="entriesPopup" class="popup">
         <div class="popup-content">
             <h3>Saved Entries</h3>
@@ -41,7 +43,7 @@
             <button id="closePopup">Close</button>
         </div>
     </div>
-
+    <!--Copyright + social medias-->
     <footer>
         <p class="copyright">&copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
     </footer>

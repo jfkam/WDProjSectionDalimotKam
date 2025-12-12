@@ -5,16 +5,7 @@
     <title>My Diary</title>
     <link rel="icon" href="images/Logo.png" type="image/png">
     <link rel="stylesheet" href="diary.css">
-
-    <script defer>
-        document.addEventListener("DOMContentLoaded", () => {
-            const usernameSpan = document.getElementById("username");
-            if (usernameSpan) {
-                const user = localStorage.getItem("currentUser") || "User";
-                usernameSpan.textContent = user;
-            }
-        });
-    </script>
+ <script defer src="diary.js"></script> 
 </head>
 
 <body>

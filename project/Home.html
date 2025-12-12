@@ -6,16 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
-
-    <script defer>
-        document.addEventListener("DOMContentLoaded", () => {
-            const usernameSpan = document.getElementById("username");
-            if (usernameSpan) {
-                const user = localStorage.getItem("currentUser") || "User";
-                usernameSpan.textContent = user;
-            }
-        });
-    </script>
+    <script defer src="Home.js"></script> 
 </head>
 
 <body>

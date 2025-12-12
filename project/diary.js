@@ -58,3 +58,11 @@ document.getElementById("viewBtn").addEventListener("click", () => {
 document.getElementById("closePopup").addEventListener("click", () => {
     document.getElementById("entriesPopup").style.display = "none";
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+            const usernameSpan = document.getElementById("username");
+            if (usernameSpan) {
+                const user = localStorage.getItem("currentUser") || "User";
+                usernameSpan.textContent = user;
+            }
+        });

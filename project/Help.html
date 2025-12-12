@@ -6,15 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Need Help Page</title>
 <link rel="stylesheet" href="Help.css">
-<script defer>
-    document.addEventListener("DOMContentLoaded", () => {
-        const usernameSpan = document.getElementById("username");
-        if (usernameSpan) {
-            const user = localStorage.getItem("currentUser") || "User";
-            usernameSpan.textContent = user;
-        }
-    });
-</script>
+<script defer src="Help.js"></script> 
+
 </head>
 
 <body>
@@ -79,12 +72,7 @@
 
     <div class="footer">Copyright © Dalimot, Kam • [Social Medias]</div>
 
-<script>
-function toggleDrop(id) {
-    const box = document.getElementById(id);
-    box.classList.toggle('open');
-}
-</script>
+
 
 </body>
 </html>

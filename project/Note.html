@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Send A Note</title>
     <link rel="stylesheet" href="note.css">
+    <script defer src="note.js"></script> 
+
 </head>
 
 <body>
@@ -36,7 +38,7 @@
 <button class="send-btn">Send</button>
 
     <section class="notes-section">
-        <h3 class="notes-title">📮 Other Notes</h3>
+        <h3 class="notes-title"> Other Notes </h3>
         <div id="notesList"></div>
     </section>
 
@@ -44,58 +46,7 @@
         <p class="copyright"> &copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
     </footer>
 
-    <script>
-       
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("username").innerText = localStorage.getItem("currentUser") || "User";
-            document.getElementById("year").innerText = new Date().getFullYear();
-            displayNotes();
-
-
-            document.querySelector(".send-btn").addEventListener("click", submitNote);
-        });
-
-        function submitNote() {
-            const noteInput = document.getElementById("noteInput");
-            const text = noteInput.value.trim();
-            if (!text) { alert("Please write something first!"); return; }
-
-            let notes = [];
-            try {
-                notes = JSON.parse(localStorage.getItem("notes")) || [];
-                if (!Array.isArray(notes)) notes = [];
-            } catch (e) { notes = []; }
-
-            notes.push({ text: text, timestamp: new Date().toLocaleString() });
-
-            localStorage.setItem("notes", JSON.stringify(notes));
-            noteInput.value = "";
-            displayNotes();
-        }
-
-        function displayNotes() {
-            const notesList = document.getElementById("notesList");
-            notesList.innerHTML = "";
-
-            let notes = [];
-            try {
-                notes = JSON.parse(localStorage.getItem("notes")) || [];
-                if (!Array.isArray(notes)) notes = [];
-            } catch (e) { notes = []; }
-
-            if (notes.length === 0) {
-                notesList.innerHTML = "<p>No notes yet. Be the first to send one!</p>";
-                return;
-            }
-
-            notes.forEach(note => {
-                const div = document.createElement("div");
-                div.className = "note";
-                div.innerHTML = `<p>${note.text}</p><span class="note-timestamp">${note.timestamp}</span>`;
-                notesList.appendChild(div);
-            });
-        }
-    </script>
+    
 
 
 </body>

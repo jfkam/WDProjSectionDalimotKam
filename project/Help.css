@@ -17,7 +17,7 @@
     color: rgb(254, 255, 176);                   
     text-align: center;   
     font-size: 48px;
-    text-shadow: 0 0 10px rgb(255, 252, 89); 
+    text-shadow: 0 0 10px rgb(255, 252, 70); 
     background-color: rgb(255, 181, 206);
     padding: 10px 20px; 
 }
@@ -48,35 +48,53 @@
   width: 100%;
   margin-top: 50px;
 }
-   .nav-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px; 
-    flex-wrap: wrap;
-    margin-top: 15px; 
+  .nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+  margin-top: 15px;
+  flex-wrap: wrap; 
 }
 
 .nav-bar a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    flex-direction: column;
-    color: white;
-    font-size: 20px;
-    font-family: "Delius Swash Caps", cursive;
-    background: rgb(255, 171, 183);
-    border: 2px solid white; 
-    top: 5px;
-    bottom: 5px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Delius Swash Caps", cursive;
+  background:  rgb(255, 171, 183);
+  top: 5px;      
     left: 5px;
     right: 5px;
-    padding: 15px 25px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(233, 89, 111, 0.4);
+    bottom: 5px;
+    border: 2px solid white; 
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(233, 89, 111, 0.4);
+ 
 }
 
+.nav-bar a:hover {
+  background-color: rgb(196, 239, 179);
+}
+
+h1 {
+    font-family: cursive;           
+    color: rgb(254, 255, 176);                   
+    text-align: center;             
+    text-shadow: 0 0 10px rgb(255, 252, 89); 
+}
+
+.site-logo {
+    width: 80px;          
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
   
     h1 {

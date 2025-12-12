@@ -79,6 +79,10 @@ footer {
   box-shadow: 0 5px 10px rgba(233, 89, 111, 0.3);
 }
 
+.nav-bar a:hover {
+  background-color: rgb(196, 239, 179);
+}
+
 h1 {
     font-family: cursive;           
     color: rgb(254, 255, 176);                   

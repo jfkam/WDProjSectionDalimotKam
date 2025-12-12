@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-image: url(images/background.png);
+    background-image: url(assets/background.png);
     font-family: "Cormorant Garamond", serif;
 }
 
@@ -112,7 +112,7 @@ button:hover {
     margin: 30px auto;
     width: 900px;   
     height: 600px;  
-    background-image: url("images/diaryentry.png");
+    background-image: url("assets/diaryentry.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -30,7 +30,7 @@
       flex-direction: column;
       min-height: 100vh;
       margin: 0;
-      background-image: url("images/background.png");
+      background-image: url("assets/background.png");
       background-repeat: repeat;
       background-attachment: fixed;
       background-position: center;
@@ -119,23 +119,23 @@ h1 {
 
 
 .cloud-blue {
-    background: url("images/blue-cloud.png") no-repeat center/contain;
+    background: url("assets/blue-cloud.png") no-repeat center/contain;
 }
 
 .cloud-lightblue {
-    background: url("images/lightblue-cloud.png") no-repeat center/contain;
+    background: url("assets/lightblue-cloud.png") no-repeat center/contain;
 }
 
 .cloud-pink {
-    background: url("images/pink-cloud.png") no-repeat center/contain;
+    background: url("assets/pink-cloud.png") no-repeat center/contain;
 }
 
 .cloud-yellow {
-    background: url("images/yellow-cloud.png") no-repeat center/contain;
+    background: url("assets/yellow-cloud.png") no-repeat center/contain;
 }
 
 .cloud-green {
-    background: url("images/green-cloud.png") no-repeat center/contain;
+    background: url("assets/green-cloud.png") no-repeat center/contain;
 }
 
 .title-cloud {

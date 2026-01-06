@@ -28,3 +28,12 @@
 *****
 ### Wireframe
 [Wireframe](https://www.canva.com/design/DAG24od6Pu0/U2O_RmRlkp2bErPBO6pYvA/edit?utm_content=DAG24od6Pu0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+*****
+# Q3 Proposal Update
+## [final title]
+*****
+## Features
+### My diary: This feature allows users to express their overflowing emotions that they can't bear to share with others through a digital diary. As an added function, the users are able to save their entries with the button "Save Entry" and are able to retrieve past saved entries with the button "View Saved Entries". 
+### Send a Note: This feature allows users to anonymously send messages that will be displayed in the "Other Notes" bulletin board.
+### Settings: This feature is the control sector of the entire website. It contains users' personal information such as user's email, phone number, password and etc. Aside from that, there will be different modes that the user can pick out from such as light and dark mode.
+###

@@ -33,7 +33,18 @@
 ## [final title]
 *****
 ## Features
-### My diary: This feature allows users to express their overflowing emotions that they can't bear to share with others through a digital diary. As an added function, the users are able to save their entries with the button "Save Entry" and are able to retrieve past saved entries with the button "View Saved Entries". 
+### Sign in/Log in: This feature 
+### My diary: This feature allows users to express their overflowing emotions that they can't bear to share with others through a digital diary. As an added function, the users are able to save their entries and retrieve previously saved entries whenever they like.
 ### Send a Note: This feature allows users to anonymously send messages that will be displayed in the "Other Notes" bulletin board.
-### Settings: This feature is the control sector of the entire website. It contains users' personal information such as user's email, phone number, password and etc. Aside from that, there will be different modes that the user can pick out from such as light and dark mode.
-###
+### Settings: This feature is the control sector of the entire website. It contains users' profile including username, password, and email(optional). Aside from that, there will be different modes that the user can alternate between--- the light and dark mode.
+### Spotify: 
+*****
+## Details
+
+*****
+## Definition of Done
+
+*****
+## Wireframe
+[Wireframe]()
+*****

@@ -48,5 +48,8 @@
 
 *****
 ## Wireframe
-[Wireframe]()
+### Laptop version
+[Wireframe](https://www.canva.com/design/DAG9o36anX0/7RhPHVVyzGwx3Fx2dpFcCg/edit?utm_content=DAG9o36anX0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+### Phone version
+[Wireframe](https://www.canva.com/design/DAG905wZiwo/LIYFl6RwE8ypPAC0sPgsCw/edit?utm_content=DAG905wZiwo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 *****

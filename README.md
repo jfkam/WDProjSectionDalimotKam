@@ -30,7 +30,7 @@
 [Wireframe](https://www.canva.com/design/DAG24od6Pu0/U2O_RmRlkp2bErPBO6pYvA/edit?utm_content=DAG24od6Pu0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 *****
 # Q3 Proposal Update
-## [final title]
+## Are You Ok: A Check-Up on Us
 *****
 ## Features
 ### Sign in/Log in: This feature allows users to create their own accounts and be able to save their data through local storage using JS.  After making an account, the user will have access to the entire website.
@@ -50,7 +50,7 @@
 *****
 ## Wireframe
 ### Laptop version
-[Wireframe](https://www.canva.com/design/DAG9o36anX0/7RhPHVVyzGwx3Fx2dpFcCg/edit?utm_content=DAG9o36anX0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Wireframe_laptop](https://www.canva.com/design/DAG9o36anX0/7RhPHVVyzGwx3Fx2dpFcCg/edit?utm_content=DAG9o36anX0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ### Phone version
-[Wireframe](https://www.canva.com/design/DAG905wZiwo/LIYFl6RwE8ypPAC0sPgsCw/edit?utm_content=DAG905wZiwo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Wireframe_Phone](https://www.canva.com/design/DAG905wZiwo/LIYFl6RwE8ypPAC0sPgsCw/edit?utm_content=DAG905wZiwo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 *****

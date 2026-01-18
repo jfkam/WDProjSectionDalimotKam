@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--Page baseline structure-->
-<link rel="icon" href="assets/Logo.png" type="image/png">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Need Help Page</title>
-<link rel="stylesheet" href="Help.css">
-<script defer src="Help.js"></script> 
-
+    <link rel="icon" href="assets/Logo.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Need Help Page</title>
+    <link rel="stylesheet" href="Help.css">
+    <script defer src="Help.js"></script> 
 </head>
 
 <body>
- 
+
+    <!-- HEADER -->
     <header>
-        <!--Headings + navigation menu-->
         <img src="assets/Logo.png" class="site-logo" alt="Logo">
         <h1>Hello, <span id="username">User</span></h1>
         <nav class="nav-bar">
@@ -26,59 +24,54 @@
         </nav>
     </header>
 
-    <h2>Need Help?</h2>
-    <!--Suicide entry for prompt-->
-    <div class="star-nav">
-           <div class="dropdown">
-            <a class="star-link" onclick="toggleDrop('suicide')">
-                <img src="assets/star2.png"/>
-            </a>
-            <div id="suicide" class="drop-content">
-                <h2>Emphasis on Suicide</h2>
-                <p>Always remember that suicide will not solve the problem, you’re departing away from your loved ones — the people who’ve stayed by your side in every moments of your life. If you need help, reach out to your local support.</p>
+    <!-- MAIN CONTENT -->
+    <main class="about-container">
+        <h2 class="about-title">Need Help?</h2>
+
+        <div class="star-nav">
+            <!-- Suicide entry -->
+            <div class="dropdown">
+                <a class="star-link" onclick="toggleDrop('suicide')">
+                    <img src="assets/star2.png"/>
+                </a>
+                <div id="suicide" class="drop-content">
+                    <h2>Emphasis on Suicide</h2>
+                    <p>Always remember that suicide will not solve the problem...</p>
+                </div>
+            </div>
+
+            <!-- Ways to help -->
+            <div class="dropdown">
+                <a class="star-link" onclick="toggleDrop('help')">
+                    <img src="assets/star3.png"/>
+                </a>
+                <div id="help" class="drop-content">
+                    <h2>Simple Ways to Help</h2>
+                    <p>Find something that can bring motivation...</p>
+                </div>
+            </div>
+
+            <!-- Counseling info -->
+            <div class="dropdown">
+                <a class="star-link" onclick="toggleDrop('counseling')">
+                    <img src="assets/star4.png"/>
+                </a>
+                <div id="counseling" class="drop-content">
+                    <h2>Counseling & Hospitals</h2>
+                    <p>Lots of hotline numbers here...</p>
+                </div>
             </div>
         </div>
+    </main>
 
-        <!--Ways to help entry for prompt-->
-        <div class="dropdown">
-            <a class="star-link" onclick="toggleDrop('help')">
-                <img src="assets/star3.png"/>
-            </a>
-            <div id="help" class="drop-content">
-                <h2>Simple Ways to Help</h2>
-                <p>Find something that can bring motivation or “light” back to your life. It does not require extreme expenses but simple things such as strolling in the park – which is free for everyone. You can even seek guidance from a trusted friend/adult. </p>
-            </div>
+    <!-- FOOTER -->
+    <footer>       
+        <div class="footer-contacts">
+            <p>b2029ketdalimot@pshs.edu.ph</p>
+            <p>b2029jfkam@pshs.edu.ph</p>
+            <p class="copyright">&copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
         </div>
-
-        <!--Contact information-->
-        <div class="dropdown">
-            <a class="star-link" onclick="toggleDrop('counseling')">
-                <img src="assets/star4.png"/>
-            </a>
-            <div id="counseling" class="drop-content">
-                <h2>Counseling & Hospitals</h2>
-                <p>NCMH Crisis Hotline (24/7):</p>
-                <p>Nationwide Landline (toll-free): 1553 </p>
-                <p>Globe/TM subscribers: 0917-899-8727 (USAP) or 0966-351-4518 </p>
-                <p>Smart/TNT subscribers: 0919-057-1553 or 0908-639-2672</p>
-                <p>For landlines in areas outside of Luzon, dial (02) 7989-8727.</p>
-                <p>In Touch Community Services (24/7 free and confidential counseling):</p>
-                <p>Landline: (02) 8893-7603</p>
-                <p>Mobile: 0917-800-1123 or 0922-893-8944 </p>
-                <p>Hopeline (Natasha Goulbourn Foundation, 24/7):</p>
-                <p>PLDT Landline: (02) 8804-4673</p>
-                <p>Globe subscribers (toll-free): 2919</p>
-                <p>Globe/TM mobile: 0917-558-4673</p>
-                <p>Smart mobile: 0918-873-4673 </p>
-                <p>Philippine General Hospital (PGH) Psychiatry and Behavioral Medicine Department: Offers free consultations. You can book an appointment online via the PGH OPD website.</p>
-                <p>Landline: (02) 8554-8470 or (02) 8526-0150</p>
-
-            </div>
-        </div>
-    <!--Copyright + social medias-->
-    <div class="footer">Copyright © Dalimot, Kam • [Social Medias]</div>
-
-
+    </footer>
 
 </body>
 </html>

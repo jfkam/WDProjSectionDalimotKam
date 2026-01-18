@@ -1,4 +1,4 @@
-   /* RESET */
+/* RESET */
 html, body {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(assets/pinkbackground.jpg);
+    background-image: url("assets/pinkbackground.jpg");
 }
 
 
@@ -60,22 +60,20 @@ h1 {
 }
 
 footer {
-    padding: 15px 0;
-    font-size: 17pt;
-    color: black;
-    background-color: rgb(255, 181, 206);
-    text-align: center;
-    box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
-}
-
-
-.about-container {
-    width: 90%;
-    margin: auto;
-    padding-top: 40px;
+    background-color: rgb(255, 181, 206); 
+    padding: 20px 0;                    
+    text-align: center;                   
     font-family: "Delius Swash Caps", cursive;
-    position: relative;
+    font-size: 18px;
+    color: black;
+    box-shadow: 0 -3px 5px rgba(0,0,0,0.1);
 }
+
+.footer-contacts p {
+    margin: 5px 0; 
+    font-size: 16px;
+}
+
 
 
 .vent-title {

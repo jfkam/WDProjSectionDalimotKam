@@ -13,14 +13,18 @@ header {
 }
 
 footer {
-    padding: 15px 0;
-    font-size: 17pt;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 181, 206);
-    text-align: center;
-    box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
-    width: 100%;
-    margin-top: 50px;
+    background-color: rgb(255, 181, 206); 
+    padding: 20px 0;                    
+    text-align: center;                   
+    font-family: "Delius Swash Caps", cursive;
+    font-size: 18px;
+    color: black;
+    box-shadow: 0 -3px 5px rgba(0,0,0,0.1);
+}
+
+.footer-contacts p {
+    margin: 5px 0; 
+    font-size: 16px;
 }
 
 .site-logo {

@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Playfair Display", serif;
-    background-image: url("assets/yellowbackground.jpg");
+    background-image: url("assets/backgroundsignin.png");
     background-size: cover;
     overflow-x: hidden;
 }
@@ -24,11 +24,11 @@ header {
 }
 
 .site-logo {
-    width: 80px;          
+    width: 130px;          
     height: auto;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    right: 20px;
 }
 
 header h1 {
@@ -50,6 +50,7 @@ header h1 {
     padding: 40px 20px;
     text-align: center;
     min-height: 700px;
+    margin-top: 170px;
 }
 
 .title {

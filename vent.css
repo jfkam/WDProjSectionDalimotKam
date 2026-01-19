@@ -202,3 +202,74 @@ footer {
 .sign-out-btn:hover {
     background-color: rgb(220, 50, 50);
 }
+
+.settings-dropdown {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+/* Icon */
+.settings-icon {
+    width: 100px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/* Menu box */
+.settings-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background-color: rgb(255, 171, 183);
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    min-width: 180px;
+    z-index: 1000;
+}
+
+/* Show menu */
+.settings-menu.show {
+    display: block;
+}
+
+/* Links */
+.settings-menu a,
+.hover-item {
+    padding: 10px 14px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.settings-menu a:hover,
+.hover-item:hover {
+    background-color: rgb(196, 239, 179);
+    border-radius: 8px;
+}
+
+/* Hover tooltip */
+.hover-item {
+    position: relative;
+    cursor: default;
+}
+
+.hover-info {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(196, 239, 179);
+    padding: 6px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.hover-item:hover .hover-info {
+    display: block;
+}

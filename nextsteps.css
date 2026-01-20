@@ -1,0 +1,10 @@
+
+  .message { display: none; margin: 10px 0; padding: 12px; border-radius: 10px; background: #f1f1f1; }
+  .high { background: #f9cdcd; }
+  .medium { background: #fff3cd; }
+  .low { background: #bbdeed; }
+
+@media (max-width: 768px) {
+    main.homepage h2 { font-size: 50px; }
+    main.homepage h3 { font-size: 35px; }
+}

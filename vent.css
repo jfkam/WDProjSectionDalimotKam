@@ -273,3 +273,8 @@ footer {
 .hover-item:hover .hover-info {
     display: block;
 }
+
+@media (max-width: 768px) {
+    main.homepage h2 { font-size: 50px; }
+    main.homepage h3 { font-size: 35px; }
+}

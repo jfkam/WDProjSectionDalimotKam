@@ -253,6 +253,51 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    main.homepage h2 { font-size: 50px; }
-    main.homepage h3 { font-size: 35px; }
+
+  
+  .sources-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .cloud {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+ 
+  header {
+    padding-top: 70px;
+  }
+
+  .site-logo {
+    width: 50px;
+    position: static;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .settings-icon {
+    width: 60px;
+    height: auto;
+  }
+
+
+  .nav-bar a {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  
+  .hover-info {
+    display: none;
+  }
+
+
+  body {
+    overflow-x: hidden;
+  }
 }

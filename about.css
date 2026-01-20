@@ -266,8 +266,43 @@ footer {
     background-color: rgb(220, 50, 50);
 }
 
+
 @media (max-width: 768px) {
-    .cloud-wrapper {
-        justify-content: center; /* center on small screens */
-    }
+
+  .cloud-wrapper {
+    justify-content: center;
+  }
+
+  .cloud {
+    width: 90%;
+    padding: 4vw;
+  }
+
+  .cloud img {
+    width: 95%;
+  }
+
+  .about-title,
+  .vent-title,
+  .sources-title {
+    font-size: 36px; 
+    margin-bottom: 20px;
+  }
+
+ 
+  .cloud,
+  .title-cloud h3,
+  .social-text {
+    font-size: 16px; 
+  }
+
+  .nav-bar a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  footer,
+  .footer-contacts p {
+    font-size: 14px;
+  }
 }

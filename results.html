@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Results</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f7;
+    padding: 20px;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.bar-container {
+    background: #e5e5ea;
+    border-radius: 10px;
+    height: 18px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    width: 0%;
+    background: #007aff;
+}
+
+.message {
+    background: #f1f1f1;
+    padding: 12px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: #007aff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Your Results</h2>
+
+    <p><strong>Anxiety Level</strong></p>
+    <div class="bar-container">
+        <div id="anxietyBar" class="bar"></div>
+    </div>
+
+    <p><strong>Depression Level</strong></p>
+    <div class="bar-container">
+        <div id="depressionBar" class="bar"></div>
+    </div>
+
+    <div id="infoBox"></div>
+
+    <button onclick="goNext()">Next</button>
+
+</div>
+
+<script>
+
+
+const q1 = parseInt(localStorage.getItem("q1")) || 0;
+const q2 = parseInt(localStorage.getItem("q2")) || 0;
+const q3 = parseInt(localStorage.getItem("q3")) || 0;
+const q4 = parseInt(localStorage.getItem("q4")) || 0;
+
+
+
+const anxietyScore = q2 + q4;
+const depressionScore = (8 - (q1 + q3)); 
+
+
+document.getElementById("anxietyBar").style.width =
+    (anxietyScore / 8) * 100 + "%";
+
+document.getElementById("depressionBar").style.width =
+    (depressionScore / 8) * 100 + "%";
+
+
+const infoBox = document.getElementById("infoBox");
+
+if (anxietyScore >= 6) {
+    infoBox.innerHTML += `
+        <div class="message">
+            Frequent anxiety can be caused by academic pressure, workload, financial issues or burnout.
+        </div>
+    `;
+}
+
+if (depressionScore >= 6) {
+    infoBox.innerHTML += `
+        <div class="message">
+            A poor sleep schedule and overworking can cause a noticeable shift to your demeanor.
+        </div>
+    `;
+}
+
+infoBox.innerHTML += `
+    <div class="message">
+        Healthy coping strategies include rest, talking to someone you trust, and practicing self-care.
+    </div>
+`;
+
+function goNext() {
+    window.location.href = "next-steps.html";
+}
+</script>
+
+</body>
+</html>

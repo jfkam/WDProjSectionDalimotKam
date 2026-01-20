@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mental Health Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>MENTAL HEALTH QUIZ</h1>
+
+<form id="quizForm">
+
+
+    <section class="page">
+        <h3>1. How have you been feeling lately?</h3>
+        <label><input type="radio" name="q1" value="4"> Very good</label><br>
+        <label><input type="radio" name="q1" value="3"> Good</label><br>
+        <label><input type="radio" name="q1" value="2"> Neutral</label><br>
+        <label><input type="radio" name="q1" value="1"> Bad</label><br>
+        <label><input type="radio" name="q1" value="0"> Very bad</label><br>
+    </section>
+
+
+    <section class="page" hidden>
+        <h3>2. How stressed do you feel?</h3>
+        <label><input type="radio" name="q2" value="1"> Not stressed</label><br>
+        <label><input type="radio" name="q2" value="2"> Slightly stressed</label><br>
+        <label><input type="radio" name="q2" value="3"> Moderately stressed</label><br>
+        <label><input type="radio" name="q2" value="4"> Very stressed</label><br>
+    </section>
+
+
+    <section class="page" hidden>
+        <h3>3. How well have you been sleeping?</h3>
+        <label><input type="radio" name="q3" value="4"> Very well</label><br>
+        <label><input type="radio" name="q3" value="3"> Okay</label><br>
+        <label><input type="radio" name="q3" value="2"> Poorly</label><br>
+        <label><input type="radio" name="q3" value="1"> Very poorly</label><br>
+    </section>
+
+
+    <section class="page" hidden>
+        <h3>4. Have you felt anxious recently?</h3>
+        <label><input type="radio" name="q4" value="1"> Not at all</label><br>
+        <label><input type="radio" name="q4" value="2"> Sometimes</label><br>
+        <label><input type="radio" name="q4" value="3"> Often</label><br>
+        <label><input type="radio" name="q4" value="4"> Almost always</label><br>
+         <label><input type="radio" name="q4" value="5"> Always</label><br>
+    </section>
+   
+    <section class="page" hidden>
+        <h3>5. Have you felt tired for no reason lately?</h3>
+        <label><input type="radio" name="q4" value="1"> Not at all</label><br>
+        <label><input type="radio" name="q4" value="2"> Sometimes</label><br>
+        <label><input type="radio" name="q4" value="3"> Often</label><br>
+        <label><input type="radio" name="q4" value="4"> Almost always</label><br>
+        <label><input type="radio" name="q4" value="5"> Always</label><br>
+    </section>
+
+
+
+<div>
+    <button type="button" onclick="prevPage()">Back</button>
+    <button type="button" onclick="nextPage()" id="nextBtn">Next</button>
+</div>
+
+<p id="pageIndicator"></p>
+
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

@@ -197,3 +197,49 @@ footer {
 .hover-item:hover .hover-info {
     display: block;
 }
+
+@media (max-width: 768px) {
+
+
+  .about-title {
+    font-size: 48px;
+    text-align: center;
+  }
+
+
+  header {
+    padding-top: 70px;
+  }
+
+ 
+  .site-logo {
+    width: 50px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .settings-icon {
+    width: 60px;
+    height: auto;
+  }
+
+ 
+  .nav-bar {
+    gap: 10px;
+  }
+
+  .nav-bar a {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+
+  .hover-info {
+    display: none;
+  }
+
+ 
+  body {
+    overflow-x: hidden;
+  }
+}

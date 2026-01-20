@@ -238,11 +238,7 @@ footer {
     display: block;
 }
 
-@media (max-width: 768px) {
-    .cloud-wrapper {
-        justify-content: center; /* center on small screens */
-    }
-}
+
     .cloud {
         width: 90%;
         padding: 4vw;
@@ -268,4 +264,10 @@ footer {
 
 .sign-out-btn:hover {
     background-color: rgb(220, 50, 50);
+}
+
+@media (max-width: 768px) {
+    .cloud-wrapper {
+        justify-content: center; /* center on small screens */
+    }
 }

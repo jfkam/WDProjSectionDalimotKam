@@ -1,3 +1,4 @@
+/* Base Structure*/
 
 html, body {
     margin: 0;
@@ -9,7 +10,7 @@ html, body {
     background-image: url(assets/pinkbackground.jpg);
 }
 
-/* HEADER */
+
 header {
     background-color: rgb(255, 181, 206);
     padding: 10px 20px;
@@ -30,6 +31,7 @@ h1 {
     color: rgb(254, 255, 176);
     text-shadow: 0 0 10px rgb(255, 252, 89);
 }
+
 
 .nav-bar {
     display: flex;
@@ -76,95 +78,7 @@ footer {
 }
 
 
-.about-title {
-    text-align: center;
-    font-size: 42px;
-    color: #f18cbe;
-    margin-bottom: 30px;
-    text-shadow: 0 0 8px #ffd3f8;
-}
 
-
-.cloud {
-    width: 60%;        
-    max-width: 800px;      
-    padding: 2vw;
-    border-radius: 2vw;
-    margin-bottom: 40px;
-
-    display: flex;        
-    align-items: center;  
-    justify-content: flex-start; 
-    background-size: cover;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-.cloud-blue {
-    background: url("assets/blue-cloud.png") no-repeat center/contain;
-}
-
-.cloud-lightblue {
-    background: url("assets/lightblue-cloud.png") no-repeat center/contain;
-}
-
-.cloud-pink {
-    background: url("assets/pink-cloud.png") no-repeat center/contain;
-}
-
-.cloud-yellow {
-    background: url("assets/yellow-cloud.png") no-repeat center/contain;
-}
-
-.cloud-green {
-    background: url("assets/green-cloud.png") no-repeat center/contain;
-}
-
-.cloud img {
-   width: 90%;
-   max-width: 600px;          
-    height: auto;
-    display: block;
-    margin-right: 0;  
-}
-
-.title-cloud h3 img {
-    width: 90%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-}
-
-.title-cloud {
-    text-align: center;
-}
-
-.title-cloud h3 {
-    font-size: 1.5vw;
-    font-family: "Emilys Candy", cursive;
-}
-
-
-.social-text {
-    text-align: center;
-    font-size: 1.5vw;
-    margin-top: 2vw;
-}
-
-.cloud-wrapper{
-    width: 100%;
-    display: flex;
-    margin-bottom: 2vw;
-}
-
-.cloud-wrapper.left {
-    justify-content: flex-start; 
-}
-
-.cloud-wrapper.right {
-    justify-content: flex-end;   
-}
 
 .settings-dropdown {
     position: absolute;
@@ -236,72 +150,102 @@ footer {
 .hover-item:hover .hover-info {
     display: block;
 }
+/*End*/
 
-
-    .cloud {
-        width: 90%;
-        padding: 4vw;
-    }
-    .cloud img {
-        width: 95%;
-    }
-
-    .sign-out-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 8px 15px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(233, 65, 65, 0.596);
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-    transition: background 0.2s ease;
+.quiz-card {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 35px 40px;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
 }
 
-.sign-out-btn:hover {
-    background-color: rgb(220, 50, 50);
+
+.about-title {
+    text-align: center;
+    font-size: 42px;
+    color: #f18cbe;
+    margin-bottom: 30px;
+    text-shadow: 0 0 8px #ffd3f8;
+}
+
+.page h3 {
+    font-size: 22px;
+    color: #943d66;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+
+.page label {
+    display: block;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    background: #fff9e8;
+    border-radius: 18px;
+    border: 2px solid #f2c6dd;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.25s ease;
+}
+
+.page label:hover {
+    background: #ffe6f3;
+    transform: scale(1.01);
+}
+
+.page input[type="radio"] {
+    margin-right: 12px;
+    accent-color: #f18cbe;
+}
+
+.quiz-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.quiz-navigation button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+    background: #ffb7ef;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.quiz-navigation button:hover {
+    background: #ff94e8;
+}
+
+
+#pageIndicator {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 16px;
+    color: #943d66;
 }
 
 
 @media (max-width: 768px) {
+    .quiz-card {
+        padding: 25px 20px;
+        margin: 20px;
+    }
 
-  .cloud-wrapper {
-    justify-content: center;
-  }
+    .about-title {
+        font-size: 34px;
+    }
 
-  .cloud {
-    width: 90%;
-    padding: 4vw;
-  }
+    .page h3 {
+        font-size: 20px;
+    }
 
-  .cloud img {
-    width: 95%;
-  }
-
-  .about-title,
-  .vent-title,
-  .sources-title {
-    font-size: 36px; 
-    margin-bottom: 20px;
-  }
-
- 
-  .cloud,
-  .title-cloud h3,
-  .social-text {
-    font-size: 16px; 
-  }
-
-  .nav-bar a {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-
-  footer,
-  .footer-contacts p {
-    font-size: 14px;
-  }
+    .page label {
+        font-size: 16px;
+    }
 }

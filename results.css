@@ -1,56 +1,91 @@
 
+/* ===== PAGE BASE ===== */
 body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f7;
-    padding: 20px;
+    margin: 0;
+    padding: 30px 20px;
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(135deg, #ffe6f3, #fff9e8);
 }
 
+/* ===== RESULT CARD ===== */
 .container {
-    max-width: 420px;
+    max-width: 480px;
     margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 28px;
+    border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
 }
 
+/* ===== TITLE ===== */
 h2 {
     text-align: center;
+    font-size: 32px;
+    color: #f18cbe;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px #ffd3f8;
 }
 
+/* ===== PROGRESS BAR ===== */
 .bar-container {
-    background: #e5e5ea;
-    border-radius: 10px;
+    background: #f2c6dd;
+    border-radius: 14px;
     height: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     overflow: hidden;
 }
 
 .bar {
     height: 100%;
     width: 0%;
-    background: #ff4cbd6a;
+    background: linear-gradient(90deg, #ffb7ef, #ff94e8);
+    transition: width 0.6s ease;
 }
 
+/* ===== MESSAGE BUBBLES ===== */
 .message {
-    background: #a3ddff;
-    padding: 12px;
-    border-radius: 16px;
-    margin-bottom: 10px;
-    font-size: 14px;
+    background: #fff9e8;
+    padding: 16px 18px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #943d66;
+    border: 2px solid #f2c6dd;
 }
 
+/* ===== BUTTON ===== */
 button {
     width: 100%;
     padding: 14px;
     border: none;
-    border-radius: 14px;
-    background: #ff4cbd6a;
+    border-radius: 30px;
+    background: #ffb7ef;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    main.homepage h2 { font-size: 50px; }
-    main.homepage h3 { font-size: 35px; }
+button:hover {
+    background: #ff94e8;
+    transform: translateY(-1px);
 }
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 24px 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+}
+
+
+

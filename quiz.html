@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Mental Health Quiz</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/Logo.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script defer src="Home.js"></script>
 </head>
+
 
 <body>
 
-<h1>MENTAL HEALTH QUIZ</h1>
 
-<form id="quizForm">
+    <header>
+        <!--Headings + navigation menu-->
+        <img src="assets/Logo.png" class="site-logo" alt="Logo">
+        <h1>Hello, <span id="username">User</span></h1>
+        <nav class="nav-bar">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Help.html">Need Help?</a>
+            <a href="Vent.html">Vent Space</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+        <div class="settings-dropdown">
+            <img src="assets/settings.png" class="settings-icon" alt="Settings" onclick="toggleSettings()" />
+            <div id="settings-menu" class="settings-menu">
+
+             <!-- Hover info item -->
+            <div class="hover-item">
+            <span>Username</span>
+                <div class="hover-info"><span id="settings-username">User</span></div>
+             </div>
+
+            <a href="index.html">Sign Out</a>
+        </div>
+        </div>
+    </header>
+
+    <main class="about-container">
+        <h2 class="about-title">Mental Health Quiz</h2>
+
+
+<form id="quizForm" class="quiz-card">
 
 
     <section class="page">
@@ -60,7 +94,7 @@
 
 
 
-<div>
+<div class="quiz-navigation">
     <button type="button" onclick="prevPage()">Back</button>
     <button type="button" onclick="nextPage()" id="nextBtn">Next</button>
 </div>
@@ -69,6 +103,15 @@
 
 
 <script src="quiz.js"></script>
+</main>
+<footer>       
+        <div class="footer-contacts">
+        <p>b2029ketdalimot@pshs.edu.ph</p>
+        <p>b2029jfkam@pshs.edu.ph</p>
+        <p class="copyright">&copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
+    </div>
+    </footer>
+
 
 </body>
 </html>

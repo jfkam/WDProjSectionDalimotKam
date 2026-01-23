@@ -1,10 +1,36 @@
 
-  .message { display: none; margin: 10px 0; padding: 12px; border-radius: 10px; background: #f1f1f1; }
-  .high { background: #f9cdcd; }
-  .medium { background: #fff3cd; }
-  .low { background: #bbdeed; }
+.message {
+    display: none;
+    margin: 14px 0;
+    padding: 16px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    color: #943d66;
+    background: #fff9e8;
+    border: 2px solid #f2c6dd;
+}
+
+
+.high {
+    background: linear-gradient(135deg, #ffd6e8, #fff0f7);
+    border-color: #ff94c2;
+}
+
+.medium {
+    background: linear-gradient(135deg, #fff0cc, #fff9e8);
+    border-color: #f2c87d;
+}
+
+.low {
+    background: linear-gradient(135deg, #dff2ff, #f3fbff);
+    border-color: #9fd3f2;
+}
+
 
 @media (max-width: 768px) {
-    main.homepage h2 { font-size: 50px; }
-    main.homepage h3 { font-size: 35px; }
+    .message {
+        font-size: 15px;
+        padding: 14px 16px;
+    }
 }

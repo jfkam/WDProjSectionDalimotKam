@@ -158,6 +158,11 @@ input:focus {
 }
 
 @media (max-width: 768px) {
+     body {
+        background-image: url("assets/backgroundsignin-phone.png");
+        background-size: cover;
+        background-position: center;
+    }
     main.homepage h2 { font-size: 50px; }
     main.homepage h3 { font-size: 35px; }
 }

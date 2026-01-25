@@ -18,6 +18,14 @@ header {
     text-align: center;
 }
 
+.page-title {
+    font-family: "Emilys Candy", cursive;
+    font-size: 42px;
+    color: #f18cbe;
+    text-align: center;
+    margin: 30px 0;
+    text-shadow: 0 0 8px #ffd3f8;
+}
 
 .site-logo {
     width: 80px;
@@ -57,6 +65,8 @@ h1 {
 .nav-bar a:hover {
     background-color: rgb(196, 239, 179);
     color: black;
+     transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
 footer {
@@ -170,8 +180,10 @@ footer {
     font-size: 45px;
 }
 
-
-
+.diary-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
 .note-icon {
     grid-column: 2;
     grid-row: 2;
@@ -183,6 +195,10 @@ footer {
     font-size: 45px;
 }
 
+.note-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
 .sign-out-btn {
     position: absolute;
     top: 10px;

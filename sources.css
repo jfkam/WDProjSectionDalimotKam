@@ -57,6 +57,8 @@ h1 {
 .nav-bar a:hover {
     background-color: rgb(196, 239, 179);
     color: black;
+     transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
 footer {
@@ -65,6 +67,7 @@ footer {
     text-align: center;                   
     font-family: "Delius Swash Caps", cursive;
     font-size: 18px;
+    margin-top: auto;
     color: black;
     box-shadow: 0 -3px 5px rgba(0,0,0,0.1);
 }
@@ -73,6 +76,7 @@ footer {
     margin: 5px 0; 
     font-size: 16px;
 }
+
 h1 {
     font-family: cursive;           
     color: rgb(254, 255, 176);                   

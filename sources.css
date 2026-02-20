@@ -241,7 +241,7 @@ h3 {
 .hover-info {
     display: none;
     position: absolute;
-    left: 100%;
+    right: 100%;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgb(196, 239, 179);

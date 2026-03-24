@@ -1,121 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Page baseline structure-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/Logo.png" type="image/png">
     <title>About</title>
     <link rel="stylesheet" href="about.css">
     <script defer src="about.js"></script>
-      
 </head>
 
 <body>
-    
-    <header>
-        <!--Headings + navigation menu-->
-        <img src="assets/Logo.png" class="site-logo" alt="Logo">
-        <h1>Hello, <span id="username">User</span></h1>
 
-        <nav class="nav-bar">
-            <a href="Home.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Help.html">Need Help?</a>
-            <a href="Vent.html">Vent Space</a>
-            <a href="quiz.html">Quiz</a>
-            <a href="Sources.html">Sources</a>
-            
+<header>
+    <img src="assets/Logo.png" class="site-logo" alt="Logo">
+    <h1>Hello, <span id="username">User</span></h1>
 
-        <div class="settings-dropdown">
-            <img src="assets/settings.png" class="settings-icon" alt="Settings" onclick="toggleSettings()" />
-            <div id="settings-menu" class="settings-menu">
+    <nav class="nav-bar">
+        <a href="Home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Help.html">Need Help?</a>
+        <a href="Vent.html">Vent Space</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="Sources.html">Sources</a>
+    </nav>
 
-             <!-- Hover info item -->
+    <div class="settings-dropdown">
+        <img src="assets/settings.png" class="settings-icon" alt="Settings" onclick="toggleSettings()" />
+        <div id="settings-menu" class="settings-menu">
+
             <div class="hover-item">
-            <span>Username</span>
+                <span>Username</span>
                 <div class="hover-info"><span id="settings-username">User</span></div>
-             </div>
+            </div>
 
             <a href="index.html">Sign Out</a>
         </div>
-        </div>
-        </nav>
-    </header>
-    <!--Content wrapper-->
-    <main class="about-container">
-       <h2 class="about-title">About</h2>
-        <!--Prompt entry-->
-        <div class="cloud-wrapper left">
-        <div class="cloud cloud-lightblue title-cloud">
-            <h3>   <img src="assets/cloudmentalhealth.png" ></h3>
-        </div>
-        </div>
-        <!--Answer portion-->
-        <div class="cloud-wrapper right">
-        <div class="cloud cloud-blue">
-            <p>
-                <img src="assets/blueblob.png">
-            </p>
+    </div>
+</header>
+
+<main class="about-container">
+
+    <h2 class="about-title">About</h2>
+
+    
+
+    <!-- FLASHCARDS -->
+    <div class="flashcard-container">
+
+        <div class="flashcard">
+            <div class="card-inner">
+                <div class="card-front">What is mental health ?</div>
+                <div class="card-back">Mental health is the state of complete physical, mental, social well being and free from any disease or infirmity of a person, as defined by the World Health Organization (WHO). In other words, it is the overall physiological welfare and condition of one. It is built on top of many factors —family, environment, education, and influences. </div>
+            </div>
         </div>
 
+        <div class="flashcard">
+            <div class="card-inner">
+                <div class="card-front">Signs of mental illness </div>
+                <div class="card-back">Mental illness can show up in many forms often in extreme mood swings, poor appetite, sleeping patterns, behavioral changes and withdrawal of social involvement. These are just a few of the symptoms shown at the early stages of mental illnesses. </div>
+            </div>
         </div>
-        <!--Prompt entry-->
-        <div class="cloud-wrapper left">
-            <div class="cloud cloud-pink title-cloud">
-            <h3><img src="assets/cloudsigns.png"></h3>
-        </div>
-        </div>
-        <!--Answer portion-->
-        <div class="cloud-wrapper right">
-            <div class="cloud cloud-pink">
-            <p>
-                <img src="assets/pinkblob.png">
-            </p>
-        </div>
-        </div>
-        <!--Prompt entry-->
-        <div class ="cloud-wrapper left">
-             <div class="cloud cloud-purple title-cloud">
-          
-                <h3>  <img src="assets/cloudforms.png" ></h3>
-        
-        </div>
-        </div>  
-        <!--Answer portion-->
-        <div class="cloud-wrapper right">
-            <div class="cloud cloud-purple">
-            <p>
-                <img src="assets/purpleblob.png">
-            </p>
-        </div>
-        </div>
-        <!--Prompt entry-->
-        <div class="cloud-wrapper left">
-             <div class="cloud cloud-yellow title-cloud">
-            <p>
-                 <h3>  <img src="assets/factorscloud.png" ></h3>
-            </p>
-        </div>
-        </div>      
-        <!--Answer portion-->
-        <div class="cloud-wrapper right">
-             <div class="cloud cloud-yellow">
-            <p>
-                <img src="assets/yellowblob.png">
-            </p>
-        </div>
-        </div>
-     
 
-    </main>
-    <!--Copyright + social medias-->
-    <footer>       
-        <div class="footer-contacts">
-            <p>b2029ketdalimot@pshs.edu.ph</p>
-            <p>b2029jfkam@pshs.edu.ph</p>
-            <p class="copyright">&copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.</p>
+        <div class="flashcard">
+            <div class="card-inner">
+                <div class="card-front">Forms of mental illness </div>
+                <div class="card-back">Mental illness come in numerous different forms, but they commonly show up as anxiety disorders, depression, bipolar, PTSD, phobias, and any disruptive disorder. </div>
+            </div>
         </div>
-    </footer>
+        <div class="flashcard">
+            <div class="card-inner">
+                <div class="card-front">Possible factors/causes </div>
+                <div class="card-back">Mental illness can be a factor of a combination of biological (e.g. genetics), psychological (e.g. trauma), and environmental — the surrounding influences. They all play a role that could possibly trigger a disorder, changing the course of one’s life. </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-contacts">
+        <p>b2029ketdalimot@pshs.edu.ph</p>
+        <p>b2029jfkam@pshs.edu.ph</p>
+        <p class="copyright">
+            &copy; <span id="year"></span> Dalimot, Kam 2025. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<!-- FLASHCARD SCRIPT -->
+<script>
+document.querySelectorAll('.flashcard').forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+    });
+});
+</script>
+
 </body>
 </html>

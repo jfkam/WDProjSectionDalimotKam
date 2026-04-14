@@ -72,7 +72,8 @@ h1 {
 }
 
 .settings-icon {
-    width: 45px;
+    width: 100px;
+    height: 70px;
     cursor: pointer;
 }
 
@@ -135,6 +136,9 @@ h1 {
 /* MAIN */
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* FOOTER */
@@ -154,32 +158,67 @@ footer {
 
 /* FLASHCARDS */
 .flashcard-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    padding: 30px;
+    position: relative;
+    width: 400px;
+    height: 260px;
+    margin: auto;
 }
 
-.flashcard { 
-    width: 220px; 
-    height: 130px; 
-    perspective: 1000px; 
-    cursor: pointer; 
-} 
+.flashcard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 230px;
+    transform-origin: center center; 
+        transition: transform 0.5s ease, z-index 0.2s;
+}
+
+.flashcard:nth-child(1) {
+    transform: translate(-120px, -50%) rotate(-15deg);
+}
+
+.flashcard:nth-child(2) {
+    transform: translate(-40px, -50%) rotate(-5deg);
+}
+
+.flashcard:nth-child(3) {
+    transform: translate(40px, -50%) rotate(5deg);
+}
+
+.flashcard:nth-child(4) {
+    transform: translate(120px, -50%) rotate(15deg);
+}
+
+.flashcard-container:hover .flashcard:nth-child(1) {
+    transform: translate(-220px, -50%) rotate(-15deg);
+}
+
+.flashcard-container:hover .flashcard:nth-child(2) {
+    transform: translate(-80px, -50%) rotate(-5deg);
+}
+
+.flashcard-container:hover .flashcard:nth-child(3) {
+    transform: translate(80px, -50%) rotate(5deg);
+}
+
+.flashcard-container:hover .flashcard:nth-child(4) {
+    transform: translate(220px, -50%) rotate(15deg);
+}
 
 .card-inner { 
     position: relative; 
     width: 100%; 
     height: 100%; 
     text-align: center; 
-    transition: transform 0.6s; 
     transform-style: preserve-3d; 
+     transition: transform 0.6s ease;
 } 
 
 .flashcard.flipped .card-inner { 
     transform: rotateY(180deg); 
-} 
+}
+
 
 .card-front, 
 .card-back { 
@@ -196,10 +235,21 @@ footer {
     padding: 15px; 
 }
 
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
 /* match theme */
 .card-front { 
     background: rgb(255, 171, 183); 
     color: white;
+}
+
+.flashcard:hover .card-front {
+    background:rgb(240, 241, 170);
+    color: black;
 }
 
 .card-back { 
@@ -210,8 +260,14 @@ footer {
 
 /* HOVER */
 .flashcard:hover {
-    transform: scale(1.08);
-    transition: transform 0.3s;
+    z-index: 10;
+    transform: scale(1.05);
+}
+
+.flashcard-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* MOBILE */

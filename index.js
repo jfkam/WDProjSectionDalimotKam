@@ -78,3 +78,61 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         window.location.href = "Home.html";
     }, 1200);
 });
+
+// EDIT PASSWORD
+document.getElementById("editPasswordBtn").addEventListener("click", () => {
+    const username = document.getElementById("loginUsername").value.trim();
+
+    if (!username) {
+        msg.innerHTML = "<div class='error'>Enter username first.</div>";
+        return;
+    }
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const userIndex = users.findIndex(u => u.username.toLowerCase() === username.toLowerCase());
+
+    if (userIndex === -1) {
+        msg.innerHTML = "<div class='error'>User not found.</div>";
+        return;
+    }
+
+    const newPassword = prompt("Enter new password (min 6 characters):");
+
+    if (!newPassword || newPassword.length < 6) {
+        msg.innerHTML = "<div class='error'>Password must be at least 6 characters.</div>";
+        return;
+    }
+
+    users[userIndex].password = newPassword;
+    localStorage.setItem("users", JSON.stringify(users));
+
+    msg.innerHTML = "<div class='success'>Password updated successfully.</div>";
+});
+
+
+// RESET PASSWORD
+document.getElementById("resetPasswordBtn").addEventListener("click", () => {
+    const username = document.getElementById("loginUsername").value.trim();
+
+    if (!username) {
+        msg.innerHTML = "<div class='error'>Enter username first.</div>";
+        return;
+    }
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const userIndex = users.findIndex(u => u.username.toLowerCase() === username.toLowerCase());
+
+    if (userIndex === -1) {
+        msg.innerHTML = "<div class='error'>User not found.</div>";
+        return;
+    }
+
+    const confirmReset = confirm("Reset password to default (123456)?");
+
+    if (!confirmReset) return;
+
+    users[userIndex].password = "123456";
+    localStorage.setItem("users", JSON.stringify(users));
+
+    msg.innerHTML = "<div class='success'>Password reset to 123456.</div>";
+});

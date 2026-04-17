@@ -40,17 +40,30 @@ document.getElementById("viewBtn").addEventListener("click", () => {
     const entries = getEntries().sort((a, b) => new Date(b.date) - new Date(a.date));
 
     entries.forEach((entry, index) => {
-        const li = document.createElement("li");
-        li.textContent = entry.date;
+    const li = document.createElement("li");
 
-        li.addEventListener("click", () => {
-            leftPage.innerHTML = entry.left;
-            rightPage.innerHTML = entry.right;
-            popup.style.display = "none";
-        });
+    li.innerHTML = `
+        <div class="entry-box">
+            <div class="entry-date">${entry.date}</div>
 
-        list.appendChild(li);
+            <div class="entry-actions">
+                <button class="edit-entry" data-index="${index}">Edit</button>
+                <button class="delete-entry" data-index="${index}">Delete</button>
+            </div>
+        </div>
+    `;
+
+    
+    li.addEventListener("click", (e) => {
+        if (e.target.tagName === "BUTTON") return;
+
+        leftPage.innerHTML = entry.left;
+        rightPage.innerHTML = entry.right;
+        document.getElementById("entriesPopup").style.display = "none";
     });
+
+    list.appendChild(li);
+});
 
     popup.style.display = "flex";
 });
@@ -75,3 +88,35 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleSettings() {
     document.getElementById("settings-menu").classList.toggle("show");
 }
+
+
+document.getElementById("entriesList").addEventListener("click", function(e) {
+    const entries = getEntries();
+    const index = e.target.getAttribute("data-index");
+
+    if (index === null) return;
+
+ 
+    if (e.target.classList.contains("delete-entry")) {
+        const confirmDelete = confirm("Delete this entry?");
+        if (!confirmDelete) return;
+
+        entries.splice(index, 1);
+        saveEntries(entries);
+        document.getElementById("viewBtn").click(); // refresh list
+    }
+
+   
+    if (e.target.classList.contains("edit-entry")) {
+        const newLeft = prompt("Edit left page:", entries[index].left);
+        const newRight = prompt("Edit right page:", entries[index].right);
+
+        if (newLeft !== null && newRight !== null) {
+            entries[index].left = newLeft;
+            entries[index].right = newRight;
+            saveEntries(entries);
+            document.getElementById("viewBtn").click(); // refresh list
+        }
+    }
+});
+

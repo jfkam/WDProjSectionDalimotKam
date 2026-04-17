@@ -202,12 +202,15 @@ button {
 }
 
 .popup-content li {
-    padding: 10px;
+    padding: 12px;
     background: #ffe3ef;
     margin: 10px 0;
     border-radius: 8px;
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 
 
@@ -342,4 +345,54 @@ button {
 
 .hover-item:hover .hover-info {
     display: block;
+}
+
+.entry-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.entry-date {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.entry-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* EDIT */
+.edit-entry {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+/* DELETE */
+.delete-entry {
+    background-color: #f44336;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.edit-entry:hover {
+    background-color: #45a049;
+}
+
+.delete-entry:hover {
+    background-color: #d32f2f;
+}
+
+.edit-entry,
+.delete-entry {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
 }

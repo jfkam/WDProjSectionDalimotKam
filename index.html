@@ -39,16 +39,29 @@
     <!--Log in form-->
 
     <form id="loginForm" style="display:none;">
-        <h2>Log In</h2>
+    <h2>Log In</h2>
 
-        <div class="input-label">Username</div>
-        <input type="text" id="loginUsername" placeholder="Enter Username">
+    <div class="input-label">Username</div>
+    <input type="text" id="loginUsername" placeholder="Enter Username">
 
-        <div class="input-label">Password</div>
-        <input type="password" id="loginPassword" placeholder="Enter Password">
+    <div class="input-label">Password</div>
 
-        <button type="submit" class="signup-btn">Log In</button>
-    </form>
+    
+    <div class="login-row">
+
+        
+        <div class="password-wrapper">
+            <button type="button" id="editPasswordBtn" class="edit-btn">Edit</button>
+            <button type="button" id="resetPasswordBtn" class="reset-btn">Reset</button>
+
+            <input type="password" id="loginPassword" placeholder="Enter Password">
+        </div>
+
+     
+        <button type="submit" class="login-btn">Log In</button>
+
+    </div>
+</form>
 
     <div id="message"></div>
     </div>

@@ -1,26 +1,46 @@
 
+body {
+    margin: 0;
+    padding: 30px 20px;
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(135deg, #ffe6f3, #fff9e8);
+}
+
+
+.container {
+    max-width: 480px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 28px;
+    border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #f18cbe;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px #ffd3f8;
+}
+
+
 .message {
     display: none;
-    margin: 14px 0;
+    background: #fff9e8;
     padding: 16px 18px;
     border-radius: 20px;
+    margin-bottom: 14px;
     font-size: 16px;
-    font-family: "Playfair Display", serif;
     color: #943d66;
-    background: #fff9e8;
     border: 2px solid #f2c6dd;
 }
 
-
-
+/* ===== COLOR STATES ===== */
 .high {
     background: linear-gradient(135deg, #ffd6e8, #fff0f7);
     border-color: #ff94c2;
-}
-
-.medium {
-    background: linear-gradient(135deg, #fff0cc, #fff9e8);
-    border-color: #f2c87d;
 }
 
 .low {
@@ -29,9 +49,34 @@
 }
 
 
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #ffb7ef;
+    color: white;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff94e8;
+    transform: translateY(-1px);
+}
+
 @media (max-width: 768px) {
+    .container {
+        padding: 24px 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
     .message {
         font-size: 15px;
-        padding: 14px 16px;
     }
 }

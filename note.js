@@ -71,17 +71,23 @@ function displayNotes() {
         return;
     }
 
-    notes.forEach((note) => {
-        const div = document.createElement("div");
-        div.classList.add("note");
-        div.innerHTML = `
-            <p>${note.text}</p>
-            <span class="note-timestamp">${note.timestamp}</span>
-        `;
-        notesList.appendChild(div);
-    });
-}
+    notes.forEach((note, index) => {
+    const div = document.createElement("div");
+    div.classList.add("note-card");
 
+    div.innerHTML = `
+        <p class="note-text">${note.text}</p>
+        <span class="note-timestamp">${note.timestamp}</span>
+
+        <div class="note-actions">
+            <button class="edit-btn" onclick="editNote(${index})">Edit</button>
+            <button class="delete-btn" onclick="deleteNote(${index})">Delete</button>
+        </div>
+    `;
+
+    notesList.appendChild(div);
+});
+}
 document.addEventListener("DOMContentLoaded", () => {
     const user =
         localStorage.getItem("currentUser") ||
@@ -99,3 +105,26 @@ function toggleSettings() {
     document.getElementById("settings-menu").classList.toggle("show");
 }
 
+// Edit Button
+function editNote(index) {
+    let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+    const newText = prompt("Edit your note:", notes[index].text);
+
+    if (newText !== null && newText.trim() !== "") {
+        notes[index].text = newText.trim();
+        notes[index].timestamp = new Date().toLocaleString();
+
+        localStorage.setItem("notes", JSON.stringify(notes));
+        displayNotes();
+    }
+}
+// Delete Button
+function deleteNote(index) {
+    let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+    notes.splice(index, 1);
+
+    localStorage.setItem("notes", JSON.stringify(notes));
+    displayNotes();
+}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 header {
     background-color: rgb(255, 181, 206);
     padding: 10px 20px;
@@ -10,6 +11,15 @@ header {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+}
+
+#noteInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-family: "Sour Gummy", cursive;
 }
 
 footer {
@@ -50,9 +60,6 @@ footer {
     color: black;
     font-weight: bold;
 }
-
-
-
 
 
 .letter-container {

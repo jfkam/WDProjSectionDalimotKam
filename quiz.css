@@ -1,5 +1,5 @@
 /* Base Structure*/
-
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 html, body {
     margin: 0;
     padding: 0;
@@ -187,6 +187,8 @@ footer {
     background: #fff9e8;
     border-radius: 18px;
     border: 2px solid #f2c6dd;
+    font-family: "Sour Gummy", cursive;
+    color:#943d66;
     cursor: pointer;
     font-size: 18px;
     transition: 0.25s ease;

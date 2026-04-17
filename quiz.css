@@ -152,7 +152,6 @@ footer {
 .hover-item:hover .hover-info {
     display: block;
 }
-/*End*/
 
 .quiz-card {
     max-width: 650px;
@@ -252,4 +251,49 @@ footer {
     .page label {
         font-size: 16px;
     }
+}
+
+.confirm-box {
+    position: absolute;
+    left: 77%;
+    top: 70%;
+    background: white;
+    display: none;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    text-align: center;
+}
+
+.confirm-box p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Red/Edit button */
+#editBtn {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Green/Proceed button */
+#proceedBtn {
+    background-color: #8bdc65;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* hover */
+#editBtn:hover,
+#proceedBtn:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
 }

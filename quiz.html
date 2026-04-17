@@ -4,9 +4,8 @@
     <link rel="icon" href="assets/Logo.png" type="image/png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="quiz.css">
-    <script defer src="Home.js"></script>
 </head>
 
 
@@ -45,7 +44,12 @@
 
 
 <form id="quizForm" class="quiz-card">
+ <div id="confirmBox" class="confirm-box" style="display: none;">
+    <p>Are you sure about your response?</p>
 
+    <button type="button" id="editBtn">No, I still need to edit</button>
+    <button type="button" id="proceedBtn">Yes, proceed</button>
+</div>
 
     <section class="page">
         <h3>1. How have you been feeling lately?</h3>
@@ -101,6 +105,7 @@
 
 <p id="pageIndicator"></p>
 
+</form>
 
 <script src="quiz.js"></script>
 </main>
